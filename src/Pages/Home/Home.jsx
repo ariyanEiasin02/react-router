@@ -1,12 +1,14 @@
 import React from 'react'
-import NewPost from '../../Components/NewPost/NewPost'
-
-const Home = () => {
+import Fed from '../../Components/Fed/Fed'
+const Home = ({post}) => {
   return (
-    <div>
-        <h2>Home</h2>
-        <NewPost/>
-    </div>
+    <main className='h-96'>
+      {post.length ?(
+        <Fed post={post} />
+      ):(
+        <p className='text-2xl font-robot font-normal'>No Posts to Display</p>
+      )}
+    </main>
   )
 }
 
