@@ -4,7 +4,7 @@ const Header = ({ title }) => {
   return (
     <div className='bg-[#4CA5C3] py-4'>
       <div className="max-w-container mx-auto">
-        <h2 className='font-robot text-3xl text-white font-medium uppercase'>{title}</h2>
+        <h2 className='md:px-0 px-4 font-robot text-3xl text-white font-medium uppercase'>{title}</h2>
       </div>
     </div>
   )

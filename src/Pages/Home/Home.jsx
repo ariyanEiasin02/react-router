@@ -1,12 +1,12 @@
 import React from 'react'
-import Fed from '../../Components/Fed/Fed'
-const Home = ({post}) => {
+import Feed from '../../Components/Feed/Feed'
+const Home = ({posts}) => {
   return (
-    <main className='h-96'>
-      {post.length ?(
-        <Fed post={post} />
+    <main className='max-w-container mx-auto px-4 md:px-0'>
+      {posts.length ?(
+        <Feed posts={posts} />
       ):(
-        <p className='text-2xl font-robot font-normal'>No Posts to Display</p>
+        <p className='md:px-0 px-4 my-2 text-2xl font-robot font-normal'>No Posts to Display</p>
       )}
     </main>
   )

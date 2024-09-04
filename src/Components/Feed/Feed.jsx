@@ -1,14 +1,14 @@
 import React from 'react'
 import PostItem from '../PostItem/PostItem'
 
-const Fed = ({post}) => {
+const Feed = ({posts}) => {
   return (
     <div>
-        {post.map(post =>(
+        {posts.map(post =>(
             <PostItem key={post.id} post={post} />
         ))}
     </div>
   )
 }
 
-export default Fed
+export default Feed
